@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowRight, Download, Mail, ChevronDown, Sparkles } from "lucide-react";
-import resumePdf from "@/assets/newmyresume.pdf";
+import { ExternalLink, Download, Mail, ChevronDown, Sparkles } from "lucide-react";
+import resumePdf from "@/assets/Spyonix.pdf";
 
 const techs = ["React", "TypeScript", "Node.js", "MongoDB", "Express.js", "Firebase", "Tailwind"];
 
@@ -137,18 +137,22 @@ export function Hero() {
           style={{ transform: "translateZ(70px)" }}
         >
           <a
-            href="#projects"
-            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-[0_10px_40px_-10px_rgba(59,130,246,0.7)] transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_60px_-10px_rgba(59,130,246,0.9)]"
-          >
-            <span className="relative z-10">View Projects</span>
-            <ArrowRight className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-          </a>
+  href="https://spyonix-digital-solution.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-[0_10px_40px_-10px_rgba(59,130,246,0.7)] transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_60px_-10px_rgba(59,130,246,0.9)]"
+>
+  <span className="relative z-10">Ask for Project</span>
+
+  <ExternalLink className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+
+  <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+</a>
           <a
             href={resumePdf}
             target="_blank"
             rel="noopener noreferrer"
-            download="newmyresume.pdf"
+            download="spyonix.pdf"
             className="group inline-flex items-center gap-2 rounded-xl glass-strong neon-border px-7 py-3.5 text-sm font-semibold text-foreground transition-all hover:-translate-y-0.5 hover:glow-soft"
           >
             <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />

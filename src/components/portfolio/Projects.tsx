@@ -3,7 +3,7 @@ import { Github } from "lucide-react";
 import { Section } from "./Section";
 import img1 from "@/assets/blood.png";
 import img2 from "@/assets/medhouse.png";
-import img3 from "@/assets/eventcert.png";
+import img3 from "@/assets/spyonix.png";
 
 const projects = [
   {
@@ -19,10 +19,10 @@ const projects = [
     description: "a full-stack hostel management system to manage student requests, medical services, room cleaning, mentoring, leave requests, and clearance processes",
   },
   {
-    title: "EventCert",
+    title: "Spyonix Digital Solution",
     image: img3,
-    stack: ["HTML", "CSS", "JavaScript"],
-    description: "A Certificate Management System that uses Local Storage to manage student applications and automatically generate certificates after admin approval.",
+    stack: ["HTML", "CSS3", "TpyeScript","React.js","vite"],
+    description: "Spyonix Digital Solutions delivers modern websites, applications, and custom digital solutions tailored to your needs. We transform ideas into fast, reliable, and professional digital experiences.",
   },
 ];
 
